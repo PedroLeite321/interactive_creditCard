@@ -1,0 +1,12 @@
+*   {
+    box-sizing:border-box;
+    padding:0;
+    border: 0;
+    margin: 0;
+    font-family: 'lato';
+    src: url('../fonts/lato/Lato/Lato-Regular.ttf') format(truetype);
+    src: url('../fonts/lato/Lato/Lato-Light.ttf') format(truetype);
+    src: url('../fonts/lato/Lato/Lato-Bold.ttf') format(truetype);
+    color: black;
+    
+}

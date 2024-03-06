@@ -1,0 +1,43 @@
+.top_side   {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #230A32;
+    height:100%;
+    min-height:300px;
+    max-height:680px;
+}
+
+.credit_card    {
+    position:relative;
+    text-align:center;
+    margin:20px;
+    background-color:white;
+    width:350px;
+    height:180px;
+    border-radius:15px;
+}
+
+.back_card  {
+    position:relative;
+    top:20px;
+    left:20px;
+    background-color:blue;
+}
+.black_bar{
+    width:100%;
+    background-color:black;
+    height:50px;
+    margin-top:10px;
+}
+
+
+.front_card {
+    position:absolute;
+    top: 160px;
+    right:30px;
+
+    background: rgb(75,45,245);
+    background: linear-gradient(29deg, rgba(75,45,245,1) 0%, rgba(122,129,227,1) 49%, rgba(207,62,150,1) 100%);
+}
