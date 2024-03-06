@@ -3,7 +3,7 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-color: #230A32;
+    background-color: var(--background_cards_color);
     height:100%;
     min-height:300px;
     max-height:680px;
@@ -23,21 +23,33 @@
     position:relative;
     top:20px;
     left:20px;
-    background-color:blue;
+    background-color:#fff;
 }
+
 .black_bar{
     width:100%;
-    background-color:black;
-    height:50px;
-    margin-top:10px;
+    background-color: var(--black_bar_area);
+    height:30px;
+    margin-top:20px;
+}
+
+.credit_secure_code {
+    background-color: var(--security_card_area);
+    width:100%;
+    max-width:280px;
+    margin-top:15px;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:end;
+    padding: 0 10px;
+    border-radius: var(--border_radius);
 }
 
 
 .front_card {
     position:absolute;
     top: 160px;
-    right:30px;
-
+    right:40px;
     background: rgb(75,45,245);
-    background: linear-gradient(29deg, rgba(75,45,245,1) 0%, rgba(122,129,227,1) 49%, rgba(207,62,150,1) 100%);
+    background: linear-gradient(66deg, rgba(75,45,245,1) 3%, rgba(122,129,227,1) 49%, rgb(99, 41, 104) 95%, rgb(146, 2, 183) 98%);
 }

@@ -36,7 +36,10 @@ const HelloWorld: React.FC = () => {
       <div className="top_side">
         <div className="credit_card back_card">
           <div className='black_bar'>
-            
+
+          </div>
+          <div className="credit_secure_code">
+            <span>{cvc === '' ? '000' : cvc}</span>
           </div>
         </div>
         
