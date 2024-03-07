@@ -51,7 +51,7 @@ const HelloWorld: React.FC = () => {
               {cardNumber === '' ? '0000 0000 0000 0000' : cardNumber}
           </div>
           <div className="person__name_and_cvc__area">
-            <p>{name === '' ? 'Pedro Kauã de Barros Leite' : name}</p>
+            <p>{name === '' ? 'JANE APPLESEED' : name}</p>
             <p>{ dateYY === '' ? 0 : dateYY }/{ dateMM === '' ? 0 : dateMM }</p>
           </div>
           

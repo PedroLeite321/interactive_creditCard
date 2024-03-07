@@ -53,3 +53,48 @@
     background: rgb(75,45,245);
     background: linear-gradient(66deg, rgba(75,45,245,1) 3%, rgba(122,129,227,1) 49%, rgb(99, 41, 104) 95%, rgb(146, 2, 183) 98%);
 }
+.credit_secure_code span    {
+    color:var(--white_color);
+    padding:5px;
+}
+
+.front_card {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+}
+
+.card__number__area {
+    margin-top:70px;
+    color: var(--white_color);
+    font-family:cursive;
+    letter-spacing:4px;
+    font-size:1.4em;
+    
+}
+
+.person__name_and_cvc__area {
+    display:flex;
+    justify-content: space-between;
+    padding-top:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-right:28px;
+}
+
+.person__name_and_cvc__area p   {
+    color: var(--white_color);
+    letter-spacing:2px;
+    font-size:0.9em;
+    font-weight:100;
+}
+
+.person__name_and_cvc__area p:first-of-type{
+    text-align:start;
+    margin-left:16px;
+    color: var(--white_color);
+    padding:3px;
+    letter-spacing: 3px;
+    
+    
+}
