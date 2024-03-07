@@ -33,40 +33,66 @@ const HelloWorld: React.FC = () => {
 
   return (
     <div>
+
       <div className="top_side">
-        <div className="credit_card back_card">
+
+        <div className="credit_card back_card">~
+
           <div className='black_bar'>
 
           </div>
+
           <div className="credit_secure_code">
             <span>{cvc === '' ? '000' : cvc}</span>
           </div>
+
         </div>
         
         <div className="credit_card front_card">
+
           <div className="person__face">
               
           </div>
+
           <div className="card__number__area">
+
               {cardNumber === '' ? '0000 0000 0000 0000' : cardNumber}
+
           </div>
+
           <div className="person__name_and_cvc__area">
+
             <p>{name === '' ? 'JANE APPLESEED' : name}</p>
             <p>{ dateYY === '' ? 0 : dateYY }/{ dateMM === '' ? 0 : dateMM }</p>
+
           </div>
           
         </div>
 
       </div>
       <div className="bottom_side">
-        <div>
-            <input className='credit_card_input' type="text" placeholder='e.g Jane Apleassed' onChange={handleNameChange}/>
-            <input className='credit_card_input' type="number" placeholder='e,g 1234 5678 9123 0000' onChange={handleCardNumberChange}/>
-        </div>
-        <div>
-            <input className='credit_card_input' type='number' placeholder='MM' onChange={handleDateMMChange}/>
+       
+        <div className='input__area'>
+
+            <label className='card_owner' htmlFor="">CARDHOLDER NAME</label>
+
+            <input id='card_owner' className='credit_card_input' type="text" placeholder='e.g Jane Apleassed' onChange={handleNameChange}/>
+
+            <label className='credit_number' htmlFor="credit_card_number">CARD NUMBER</label>
+
+            <input id='credit_card_number' className='credit_card_input' type="number" placeholder='e,g 1234 5678 9123 0000' onChange={handleCardNumberChange}/>
+
+            <label className='cd_month' htmlFor="credit_date">EXP.DATE (MM/YY)</label>
+
+            <input id='credit_date' className='credit_card_input' type='number' placeholder='MM' onChange={handleDateMMChange}/>
+
             <input className='credit_card_input' type='number' placeholder='YY' onChange={handleDateYYChange}/>
-            <input className='credit_card_input' type='text' placeholder='CVC' onChange={handleCvcChange}/>
+
+            <label className='cd__security' htmlFor="credit_security_number"></label>
+
+            <input id='credit_security_number' className='credit_card_input' type='text' placeholder='CVC' onChange={handleCvcChange}/>
+
+            <input type="button" value="Confirm" className="confirm__btn" />
         </div>
       </div>
     </div>
